@@ -26,9 +26,59 @@ p {
 }
 
 
+/* filter */
+
+.filter-container {
+    position: relative;
+    background-color: hsl(180, 52%, 96%);
+}
+
+.filter {
+    width: 70%;
+    padding: 1.5% 4%;
+    position: absolute;
+    top: -35px;
+    left: 15%;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 2px hsl(180, 31%, 95%);
+}
+
+.filter-item {
+    display: inline-block;
+    margin: 0 6px;
+    padding-left: 4px;
+    line-height: 2;
+    border-radius: 5px;
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 52%, 96%);
+    font-size: 13px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.filter-item::after {
+    content: 'X';
+    /* text-align: center; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: inline-block;
+    margin-left: 4px;
+    padding: 2px 8px;
+    background-color: hsl(180, 29%, 50%);
+    color: #fff;
+    height: 100%;
+}
+
+.filter-item:hover::after {
+    background-color: hsl(180, 14%, 20%);
+}
+
+
 /* item list */
 
 .item-list {
+    position: relative;
     margin: 0;
     padding: 6% 15%;
     background-color: hsl(180, 52%, 96%);
