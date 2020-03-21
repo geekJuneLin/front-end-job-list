@@ -25,6 +25,10 @@ a:hover {
     color: hsl(180, 29%, 50%);
 }
 
+hr {
+    display: none;
+}
+
 
 /* header img */
 
@@ -101,7 +105,7 @@ a:hover {
 
 .item {
     background-color: #fff;
-    padding: 2% 8%;
+    padding: 2% 4%;
     position: relative;
     margin: 14px 0;
     border-radius: 6px;
@@ -163,7 +167,7 @@ a:hover {
 
 .trailing-item {
     display: inline-block;
-    margin: 0 12px;
+    margin: 0 4px;
     color: hsl(180, 29%, 50%);
     background-color: hsl(180, 52%, 96%);
     border-radius: 4px;
@@ -176,4 +180,48 @@ a:hover {
 .trailing-item:hover {
     background-color: hsl(180, 29%, 50%);
     color: #fff;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+    .item-trailing {
+        float: left;
+        left: -4%;
+        top: 20px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .item-img {
+        position: relative;
+        top: -30px;
+        width: 60px;
+        height: 60px;
+        left: 8%;
+    }
+    .item {
+        padding: 2%;
+        margin: 30px 0;
+    }
+    .top-mid,
+    .top-trailer {
+        font-size: 10px;
+        margin: 0 2px;
+    }
+    .item-trailing {
+        top: 28px;
+    }
+    .item-start {
+        position: relative;
+        top: -15px;
+    }
+    hr {
+        display: block;
+        width: 80%;
+        position: relative;
+        top: -26px;
+    }
 }
